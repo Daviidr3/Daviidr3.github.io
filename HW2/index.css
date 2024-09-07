@@ -1,43 +1,42 @@
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    padding-top: 5px;
-    display: inline;
-    margin-right: 20px;
+  padding-top: 5px;
+  display: inline;
+  margin-right: 20px;
 }
 
 body {
-    background-image: url('silverware.jpg');
-    background-repeat: repeat;
-    background-attachment: fixed;
-    color: #404040;
-    font-family: Georgia, Garamond, serif;
-    font-size: 14pt; 
-    margin: 0;
-    padding: 20px; 
+  background-image: url("silverware.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #404040;
+  font-family: Georgia, Garamond, serif;
+  font-size: 14pt;
+  margin: 0;
+  padding: 20px;
 }
- div { 
-    text-align: center;
-
+div {
+  text-align: center;
 }
 #featured-pie {
-    padding-top: 20px;
-    text-align: center;
+  padding-top: 20px;
+  text-align: center;
 }
 
 #featured-pie img {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #featured-pie h2 {
-    text-align: center;
+  text-align: center;
 }
-footer{
-    padding-top:70px ;
-    text-align: center;
+footer {
+  padding-top: 70px;
+  text-align: center;
 }
