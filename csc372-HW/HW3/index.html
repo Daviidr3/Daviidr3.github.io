@@ -1,87 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campus Dining Recommendations</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <script src="/javascript/app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">
-            <a href="/index.html">Campus Dinning</a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/meal-plan.html">Meal Plan</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <a href="/index.html">Campus Dinning</a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/meal-plan.html">Meal Plan</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="splash">
-        <div class="splash-content">
-            <h1>Discover the Best Food Around Campus</h1>
-            <p>From quick snacks to delicious meals, here are the best places to eat within walking distance of campus.</p>
-            <button class="cta-btn">Explore Now</button>
-        </div>
+      <div class="splash-content">
+        <h1>Discover the Best Food Around Campus</h1>
+        <p>
+          From quick snacks to delicious meals, here are the best places to eat
+          within walking distance of campus.
+        </p>
+        <button class="cta-btn">Explore Now</button>
+      </div>
     </section>
     <section class="introduction">
-        <div class="intro-content">
-            <h2>Welcome to Our Campus Dining Guide</h2>
-            <p>
-                Are you a foodie on the hunt for the best meals around campus? You're in the right place! We've handpicked some of the best food spots around the University South and North Buildings for you to enjoy. Whether you're craving juicy burgers, hearty burritos, or delicious sandwiches, our list has got you covered.
-            </p>
-            <p>
-                Each location we recommend offers a variety of mouth-watering dishes that are sure to satisfy your hunger between classes or during your study breaks. Ready to dive into a culinary adventure? Check out the details of our favorite spots below!
-            </p>
-            <p> 
-                We are deticated in providing the highest quality list the campus has to offer. I hope you are ready to dive into some our handpicked options to dine at. Please consider checking out each spot and leaving a review!
-
-            </p>
-        </div>
+      <div class="intro-content">
+        <h2>Welcome to Our Campus Dining Guide</h2>
+        <p>
+          Are you a foodie on the hunt for the best meals around campus? You're
+          in the right place! We've handpicked some of the best food spots
+          around the University South and North Buildings for you to enjoy.
+          Whether you're craving juicy burgers, hearty burritos, or delicious
+          sandwiches, our list has got you covered.
+        </p>
+        <p>
+          Each location we recommend offers a variety of mouth-watering dishes
+          that are sure to satisfy your hunger between classes or during your
+          study breaks. Ready to dive into a culinary adventure? Check out the
+          details of our favorite spots below!
+        </p>
+        <p>
+          We are deticated in providing the highest quality list the campus has
+          to offer. I hope you are ready to dive into some our handpicked
+          options to dine at. Please consider checking out each spot and leaving
+          a review!
+        </p>
+      </div>
     </section>
     <section id="recommendations">
-        <!-- Champs Beef Burgers -->
-        <article class="restaurant">
-          <h2>Champs Beef Burgers</h2>
-          <p>Location: University South Building, Food Court Floor 1<br>
-          Hours: Mon-Sun 11:00 AM - 11:00 PM (Sat 11:30 PM, Sun 9:30 PM)</p>
-          <div class="dishes">
-            <img src="images/burg1.jpg" alt="Standard Burger" class="dish-image" onclick="showDishDetails('Standard Burger', 'A standard single patty burger with toppings of your choice', 8.99)">
-            <img src="images/burg2.jpg" alt="Deluxe Burger" class="dish-image" onclick="showDishDetails('Deluxe Burger', 'A double burger with cheese, bacon, tomato, and lettuce', 10.99)">
-            <img src="images/burg3.jpg" alt="Mega Burger" class="dish-image" onclick="showDishDetails('Mega Burger', 'A triple burger with cheese, bacon, lettuce, tomato, onion, and pickles', 12.99)">
-          </div>
-          <div id="champs-details" class="dish-details"></div>
-        </article>
-      
-        <article class="restaurant">
-          <h2>Super Duper Burrito Factory</h2>
-          <p>Location: University South Building, Food Court Floor 2<br>
-          Hours: Mon-Sun 11:00 AM - 11:00 PM (Sat 11:30 PM, Sun 9:30 PM)</p>
-          <div class="dishes">
-            <img src="images/bo1.jpg" alt="Mini Burrito" class="dish-image" onclick="showDishDetails('Mini Burrito', '9in  tortilla with choice of chicken, beef, steak, or non-meat with rice, beans, and toppings', 7.50)">
-            <img src="images/bo2.jpg" alt="Standard Burrito" class="dish-image" onclick="showDishDetails('Standard Burrito', '12in tortilla with meat options, guacamole, sour cream, and cheese', 9.99)">
-            <img src="images/bo3.jpg" alt="Super Burrito" class="dish-image" onclick="showDishDetails('Super Burrito', '15in tortilla with full toppings, cheese, guacamole, and sour cream', 12.50)">
-          </div>
-          <div id="super-details" class="dish-details"></div>
-        </article>
-      
-        <article class="restaurant">
-          <h2>The Sandwich Spot</h2>
-          <p>Location: University North Building, Food Court Floor 1<br>
-          Hours: Mon-Fri 10:00 AM - 9:00 PM, Sat-Sun 11:00 AM - 8:00 PM</p>
-          <div class="dishes">
-            <img src="images/san1.jpg" alt="Ham Sandwich" class="dish-image" onclick="showDishDetails('Ham Sandwich', 'Fresh ham sandwich with lettuce, tomato, cheese, and mustard', 6.50)">
-            <img src="images/sand2.jpg" alt="Turkey Sandwich" class="dish-image" onclick="showDishDetails('Turkey Sandwich', 'Turkey sandwich with lettuce, avocado, and mayonnaise', 7.50)">
-            <img src="images/sand3.jpg" alt="Club Sandwich" class="dish-image" onclick="showDishDetails('Club Sandwich', 'Triple-layered sandwich with bacon, turkey, ham, and cheese', 9.00)">
-          </div>
-          <div id="sandwich-details" class="dish-details"></div>
-        </article>
-      </section>
+      <!-- Champs Beef Burgers -->
+      <article class="restaurant">
+        <h2>Champs Beef Burgers</h2>
+        <p>
+          Location: University South Building, Food Court Floor 1<br />
+          Hours: Mon-Sun 11:00 AM - 11:00 PM (Sat 11:30 PM, Sun 9:30 PM)
+        </p>
+        <div class="dishes">
+          <img
+            src="images/burg1.jpg"
+            alt="Standard Burger"
+            class="dish-image"
+            onclick="showDishDetails('Standard Burger', 'A standard single patty burger with toppings of your choice', 8.99)"
+          />
+          <img
+            src="images/burg2.jpg"
+            alt="Deluxe Burger"
+            class="dish-image"
+            onclick="showDishDetails('Deluxe Burger', 'A double burger with cheese, bacon, tomato, and lettuce', 10.99)"
+          />
+          <img
+            src="images/burg3.jpg"
+            alt="Mega Burger"
+            class="dish-image"
+            onclick="showDishDetails('Mega Burger', 'A triple burger with cheese, bacon, lettuce, tomato, onion, and pickles', 12.99)"
+          />
+        </div>
+        <div id="champs-details" class="dish-details"></div>
+      </article>
+
+      <article class="restaurant">
+        <h2>Super Duper Burrito Factory</h2>
+        <p>
+          Location: University South Building, Food Court Floor 2<br />
+          Hours: Mon-Sun 11:00 AM - 11:00 PM (Sat 11:30 PM, Sun 9:30 PM)
+        </p>
+        <div class="dishes">
+          <img
+            src="images/bo1.jpg"
+            alt="Mini Burrito"
+            class="dish-image"
+            onclick="showDishDetails('Mini Burrito', '9in  tortilla with choice of chicken, beef, steak, or non-meat with rice, beans, and toppings', 7.50)"
+          />
+          <img
+            src="images/bo2.jpg"
+            alt="Standard Burrito"
+            class="dish-image"
+            onclick="showDishDetails('Standard Burrito', '12in tortilla with meat options, guacamole, sour cream, and cheese', 9.99)"
+          />
+          <img
+            src="images/bo3.jpg"
+            alt="Super Burrito"
+            class="dish-image"
+            onclick="showDishDetails('Super Burrito', '15in tortilla with full toppings, cheese, guacamole, and sour cream', 12.50)"
+          />
+        </div>
+        <div id="super-details" class="dish-details"></div>
+      </article>
+
+      <article class="restaurant">
+        <h2>The Sandwich Spot</h2>
+        <p>
+          Location: University North Building, Food Court Floor 1<br />
+          Hours: Mon-Fri 10:00 AM - 9:00 PM, Sat-Sun 11:00 AM - 8:00 PM
+        </p>
+        <div class="dishes">
+          <img
+            src="images/san1.jpg"
+            alt="Ham Sandwich"
+            class="dish-image"
+            onclick="showDishDetails('Ham Sandwich', 'Fresh ham sandwich with lettuce, tomato, cheese, and mustard', 6.50)"
+          />
+          <img
+            src="images/sand2.jpg"
+            alt="Turkey Sandwich"
+            class="dish-image"
+            onclick="showDishDetails('Turkey Sandwich', 'Turkey sandwich with lettuce, avocado, and mayonnaise', 7.50)"
+          />
+          <img
+            src="images/sand3.jpg"
+            alt="Club Sandwich"
+            class="dish-image"
+            onclick="showDishDetails('Club Sandwich', 'Triple-layered sandwich with bacon, turkey, ham, and cheese', 9.00)"
+          />
+        </div>
+        <div id="sandwich-details" class="dish-details"></div>
+      </article>
+    </section>
     <footer class="footer">
-        <p>&copy; 2024 Campus Dining David Vasquez. All rights reserved.</p>
+      <p>&copy; 2024 Campus Dining David Vasquez. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>

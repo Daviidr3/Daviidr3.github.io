@@ -1,51 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meal Plan</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css" />
     <script src="/javascript/meal-plan.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="logo">
-            <a href="/index.html">Campus Dinning</a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/meal-plan.html">Meal Plan</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <a href="/index.html">Campus Dinning</a>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/meal-plan.html">Meal Plan</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="meal-plan-container">
-        <div class="available-dishes">
-            <h2>Available Dishes</h2>
-            <ul>
-                <li>Standard Burger - $8.99 <button onclick="addToMealPlan('Standard Burger', 8.99)">Add to Plan</button></li>
-                <li>Deluxe Burger - $10.99 <button onclick="addToMealPlan('Deluxe Burger', 10.99)">Add to Plan</button></li>
-                <li>Mega Burger - $12.99 <button onclick="addToMealPlan('Mega Burger', 12.99)">Add to Plan</button></li>
-                <li>Mini Burrito - $7.50 <button onclick="addToMealPlan('Mini Burrito', 7.50)">Add to Plan</button></li>
-                <li>Standard Burrito - $9.99 <button onclick="addToMealPlan('Standard Burrito', 9.99)">Add to Plan</button></li>
-                <li>Super Burrito - $12.50 <button onclick="addToMealPlan('Super Burrito', 12.50)">Add to Plan</button></li>
-                <li>Ham Sandwich - $6.50 <button onclick="addToMealPlan('Ham Sandwich', 6.50)">Add to Plan</button></li>
-                <li>Turkey Sandwich - $7.50 <button onclick="addToMealPlan('Turkey Sandwich', 7.50)">Add to Plan</button></li>
-                <li>Club Sandwich - $9.00 <button onclick="addToMealPlan('Club Sandwich', 9.00)">Add to Plan</button></li>
-            </ul>
-        </div>
+      <div class="available-dishes">
+        <h2>Available Dishes</h2>
+        <ul>
+          <li>
+            Standard Burger - $8.99
+            <button onclick="addToMealPlan('Standard Burger', 8.99)">
+              Add to Plan
+            </button>
+          </li>
+          <li>
+            Deluxe Burger - $10.99
+            <button onclick="addToMealPlan('Deluxe Burger', 10.99)">
+              Add to Plan
+            </button>
+          </li>
+          <li>
+            Mega Burger - $12.99
+            <button onclick="addToMealPlan('Mega Burger', 12.99)">
+              Add to Plan
+            </button>
+          </li>
+          <li>
+            Mini Burrito - $7.50
+            <button onclick="addToMealPlan('Mini Burrito', 7.50)">
+              Add to Plan
+            </button>
+          </li>
+          <li>
+            Standard Burrito - $9.99
+            <button onclick="addToMealPlan('Standard Burrito', 9.99)">
+              Add to Plan
+            </button>
+          </li>
+          <li>
+            Super Burrito - $12.50
+            <button onclick="addToMealPlan('Super Burrito', 12.50)">
+              Add to Plan
+            </button>
+          </li>
+          <li>
+            Ham Sandwich - $6.50
+            <button onclick="addToMealPlan('Ham Sandwich', 6.50)">
+              Add to Plan
+            </button>
+          </li>
+          <li>
+            Turkey Sandwich - $7.50
+            <button onclick="addToMealPlan('Turkey Sandwich', 7.50)">
+              Add to Plan
+            </button>
+          </li>
+          <li>
+            Club Sandwich - $9.00
+            <button onclick="addToMealPlan('Club Sandwich', 9.00)">
+              Add to Plan
+            </button>
+          </li>
+        </ul>
+      </div>
 
-        <div class="meal-plan-summary">
-            <h2>Your Meal Plan</h2>
-            <ul id="selected-dishes"></ul>
-            <p>Total: $<span id="total-price">0.00</span></p>
-        </div>
+      <div class="meal-plan-summary">
+        <h2>Your Meal Plan</h2>
+        <ul id="selected-dishes"></ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+      </div>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Campus Dining David Vasquez. All rights reserved.</p>
+      <p>&copy; 2024 Campus Dining David Vasquez. All rights reserved.</p>
     </footer>
-
-</body>
+  </body>
 </html>
